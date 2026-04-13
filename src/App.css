@@ -61,10 +61,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--glass);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--glass-border);
+  background: transparent;
+  border-bottom: none;
 }
 
 .nav-logo {
@@ -435,16 +433,43 @@ body {
 
 /* ── Responsive ─────────────────────────────────── */
 @media (max-width: 768px) {
-  .navbar           { padding: 16px 24px; }
-  .hero-heading     { font-size: 44px; letter-spacing: -1.5px; }
-  .hero-sub         { font-size: 16px; }
+  /* Navbar */
+  .navbar           { padding: 14px 20px; }
+  .nav-logo         { font-size: 17px; }
+  .btn-login        { padding: 7px 14px; font-size: 13px; }
+  .btn-signup       { padding: 7px 16px; font-size: 13px; }
+
+  /* Hero */
+  .hero-section     { padding: 72px 20px 64px; }
+  .hero-heading     {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+    white-space: normal;       /* allow wrapping on small screens */
+    text-align: center;
+  }
+  .word-slot        { width: 180px; }
+  .hero-badge       { font-size: 11px; padding: 4px 14px; }
+  .hero-sub         { font-size: 15px; }
+  .hero-actions     { flex-direction: column; align-items: center; width: 100%; }
+  .btn-primary,
+  .btn-ghost        { width: 100%; max-width: 300px; text-align: center; }
+
+  /* Sections */
   .features-section,
-  .how-section      { padding: 64px 24px; }
-  .section-title    { font-size: 32px; }
-  .cards            { grid-template-columns: 1fr; }
-  .steps            { flex-direction: column; align-items: center; gap: 28px; }
-  .step-connector   { width: 48px; height: 1px; margin: 0 auto; }
-  .cta-section      { padding: 72px 24px; }
-  .cta-section h2   { font-size: 32px; }
-  .footer           { flex-direction: column; gap: 6px; padding: 24px; text-align: center; }
+  .how-section      { padding: 56px 20px; }
+  .section-title    { font-size: 30px; }
+  .cards            { grid-template-columns: 1fr; gap: 14px; }
+
+  /* Steps */
+  .steps            { flex-direction: column; align-items: center; gap: 24px; }
+  .step             { padding: 0 8px; }
+  .step-connector   { width: 40px; height: 1px; margin: 0 auto; }
+
+  /* CTA */
+  .cta-section      { padding: 64px 20px; }
+  .cta-section h2   { font-size: 30px; }
+  .btn-primary.btn-large { padding: 14px 36px; font-size: 15px; }
+
+  /* Footer */
+  .footer           { flex-direction: column; gap: 6px; padding: 20px; text-align: center; }
 }
