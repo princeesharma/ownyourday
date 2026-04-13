@@ -7,6 +7,19 @@ function App() {
   const [wordIndex, setWordIndex] = useState(0)
   const [phase, setPhase]         = useState('in')
 
+  // Shift the diagonal as user scrolls
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY
+      const maxScroll = document.body.scrollHeight - window.innerHeight
+      const ratio = maxScroll > 0 ? scrolled / maxScroll : 0
+      const stop = 50 + ratio * 35  // 50% at top → 85% at bottom
+      document.documentElement.style.setProperty('--diag-stop', `${stop}%`)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   useEffect(() => {
     const tick = () => {
       setPhase('out')
