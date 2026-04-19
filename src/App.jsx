@@ -70,10 +70,10 @@ function App() {
           OwnYourDay
         </div>
         <div className="flex gap-[10px] items-center">
-          <a href="#login" className="text-[#7A687A] py-2 px-5 rounded-full text-sm font-medium no-underline bg-white/60 backdrop-blur-[16px] border-[1.5px] border-[#F5CFDC] transition-colors hover:border-[#F9A8C0] hover:text-[#B8446A] max-md:py-[7px] max-md:px-[14px] max-md:text-[13px]">
+          <a href="/login" className="text-[#7A687A] py-2 px-5 rounded-full text-sm font-medium no-underline bg-white/60 backdrop-blur-[16px] border-[1.5px] border-[#F5CFDC] transition-colors hover:border-[#F9A8C0] hover:text-[#B8446A] max-md:py-[7px] max-md:px-[14px] max-md:text-[13px]">
             Log in
           </a>
-          <a href="#signup" className="bg-[#98D4B0] text-[#2E7A50] py-2 px-[22px] rounded-full text-sm font-semibold no-underline transition-all hover:bg-[#82C89E] hover:-translate-y-px max-md:py-[7px] max-md:px-4 max-md:text-[13px]">
+          <a href="/signup" className="bg-[#98D4B0] text-[#2E7A50] py-2 px-[22px] rounded-full text-sm font-semibold no-underline transition-all hover:bg-[#82C89E] hover:-translate-y-px max-md:py-[7px] max-md:px-4 max-md:text-[13px]">
             Sign up
           </a>
         </div>
@@ -99,7 +99,7 @@ function App() {
         </p>
 
         <div className="flex gap-3 flex-wrap justify-center max-md:flex-col max-md:items-center max-md:w-full">
-          <a href="#signup" className="bg-[#F9A8C0] text-[#B8446A] py-[13px] px-8 rounded-full text-[15px] font-semibold no-underline cursor-pointer transition-all hover:bg-[#F094AE] hover:-translate-y-px max-md:w-full max-md:max-w-[300px] max-md:text-center">
+          <a href="/signup" className="bg-[#F9A8C0] text-[#B8446A] py-[13px] px-8 rounded-full text-[15px] font-semibold no-underline cursor-pointer transition-all hover:bg-[#F094AE] hover:-translate-y-px max-md:w-full max-md:max-w-[300px] max-md:text-center">
             Start your trial
           </a>
           <a href="#how" className="bg-white/60 backdrop-blur-[16px] text-[#7A687A] py-[13px] px-8 rounded-full text-[15px] font-medium no-underline border-[1.5px] border-[#F5CFDC] transition-colors hover:border-[#F9A8C0] hover:text-[#B8446A] max-md:w-full max-md:max-w-[300px] max-md:text-center">
@@ -165,7 +165,7 @@ function App() {
         <h2 data-animate className="[font-family:'Lora',serif] text-[42px] font-semibold tracking-[-1px] text-[#2B1D25] mb-[14px] max-md:text-[30px]">
           Ready to own your life?
         </h2>
-        <a data-animate style={{ transitionDelay: '100ms' }} href="#signup" className="bg-[#F9A8C0] text-[#B8446A] py-4 px-12 rounded-full text-base font-semibold no-underline cursor-pointer transition-all hover:bg-[#F094AE] hover:-translate-y-px max-md:py-[14px] max-md:px-9 max-md:text-[15px]">
+        <a data-animate style={{ transitionDelay: '100ms' }} href="/signup" className="bg-[#F9A8C0] text-[#B8446A] py-4 px-12 rounded-full text-base font-semibold no-underline cursor-pointer transition-all hover:bg-[#F094AE] hover:-translate-y-px max-md:py-[14px] max-md:px-9 max-md:text-[15px]">
           Create free account
         </a>
       </section>
